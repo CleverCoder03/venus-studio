@@ -1,26 +1,54 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-mona: var(--font-mona-sans);
+  --font-inter: var(--font-inter-sans);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base{
+  @font-face {
+    font-family: "roc-Grotesk-Condensed-black";
+    src: url("/fonts/Roc_Grotesk_Condensed_Black.otf") format("opentype");
   }
+  @font-face {
+    font-family: "roc-Grotesk-Condensed-bold";
+    src: url("/fonts/Roc_Grotesk_Condensed_Bold.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "roc-Grotesk-Condensed-extra-bold";
+    src: url("/fonts/Roc_Grotesk_Condensed_ExtraBold.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "roc-Grotesk-Condensed-extra-light";
+    src: url("/fonts/Roc_Grotesk_Condensed_ExtraLight.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "roc-Grotesk-Condensed-heavy";
+    src: url("/fonts/Roc_Grotesk_Condensed_Heavy.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "roc-Grotesk-Condensed-light";
+    src: url("/fonts/Roc_Grotesk_Condensed_Light.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "roc-Grotesk-Condensed-medium";
+    src: url("/fonts/Roc_Grotesk_Condensed_Medium.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "roc-Grotesk-Condensed-thin";
+    src: url("/fonts/Roc_Grotesk_Condensed_Thin.otf") format("opentype");
+  }
+
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@theme {
+  --font-roc-Grotesk-Condensed-black: "roc-Grotesk-Condensed-black", "sans-serif";
+  --font-roc-Grotesk-Condensed-bold: "roc-Grotesk-Condensed-bold", "sans-serif";
+  --font-roc-Grotesk-Condensed-extra-bold: "roc-Grotesk-Condensed-extra-bold", "sans-serif";
+  --font-roc-Grotesk-Condensed-extra-light: "roc-Grotesk-Condensed-extra-light", "sans-serif";
+  --font-roc-Grotesk-Condensed-heavy: "roc-Grotesk-Condensed-heavy", "sans-serif";
+  --font-roc-Grotesk-Condensed-light: "roc-Grotesk-Condensed-light", "sans-serif";
+  --font-roc-Grotesk-Condensed-medium: "roc-Grotesk-Condensed-medium", "sans-serif";
+  --font-roc-Grotesk-Condensed-thin: "roc-Grotesk-Condensed-thin", "sans-serif";
 }
+
