@@ -81,7 +81,7 @@ const Navbar = () => {
                 <motion.div initial={{ opacity: 0}} whileInView={{ opacity: 1}} transition={{ duration: 0.8, ease: [0.83, 0, 0.17, 1] }} className="-rotate-2">Get in touch</motion.div>
               </a>
             </div>
-            <div className="flex w-full justify-between px-5 mt-20 [&_div_div]:bg-white [&_div_div]:border [&_div_div]:text-center [&_div_div]:uppercase [&_div_div]:font-roc-Grotesk-Condensed-bold [&_div_div]:px-4 [&_div]:flex [&_div]:flex-col [&_div]:gap-4">
+            <div className="relative z-10 flex w-full justify-between px-5 mt-20 [&_div_div]:bg-white [&_div_div]:border [&_div_div]:text-center [&_div_div]:uppercase [&_div_div]:font-roc-Grotesk-Condensed-bold [&_div_div]:px-4 [&_div]:flex [&_div]:flex-col [&_div]:gap-4">
               <div>
                 <a href="https://www.linkedin.com/in/clever-coder/" target="_blank" rel="noopener noreferrer">
                   <div>LinkedIn</div>
