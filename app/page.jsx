@@ -1,7 +1,9 @@
+import Navbar from "./components/Navbar";
+
 export default function Home() {
   return (
-    <main className="font-mona font-black text-4xl">
-      Hello World!!
+    <main className="font-mona">
+      <Navbar />
     </main>
   );
 }

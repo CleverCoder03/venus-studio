@@ -38,7 +38,6 @@
     font-family: "roc-Grotesk-Condensed-thin";
     src: url("/fonts/Roc_Grotesk_Condensed_Thin.otf") format("opentype");
   }
-
 }
 
 @theme {
@@ -52,3 +51,14 @@
   --font-roc-Grotesk-Condensed-thin: "roc-Grotesk-Condensed-thin", "sans-serif";
 }
 
+body{
+  background: #ffffff;
+}
+
+.nav_btn {
+  @apply border font-roc-Grotesk-Condensed-bold hidden px-2 uppercase lg:block;
+}
+
+.menu_btn {
+  @apply uppercase font-roc-Grotesk-Condensed-bold border text-3xl px-2 py-1 align-middle lg:hidden;
+}
