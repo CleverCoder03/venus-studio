@@ -1,4 +1,5 @@
 import { Inter, Mona_Sans } from "next/font/google";
+import { ReactLenis } from 'lenis/react'
 import "./globals.css";
 
 const inter = Inter({
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.variable} ${monaSans.variable} antialiased`}
       >
+        <ReactLenis />
         {children}
       </body>
     </html>

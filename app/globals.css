@@ -167,3 +167,24 @@ body{
   position: relative;
   background: white; /* Background color of your container */
 }
+
+#hero_img_wrapper_3 {
+  position: relative;
+  padding: 1px; /* Border width */
+  background: #222; /* Border color */
+  clip-path: polygon(2% 17%, 100% 0, 100% 100%, 0 78%);
+}
+
+.hero_img_3 {
+  clip-path: polygon(2% 17%, 100% 0, 100% 100%, 0 78%);
+  position: relative;
+  background: white; /* Background color of your container */
+}
+
+.headline {
+  @apply text-[19.5vw] leading-[0.8] tracking-tight font-roc-Grotesk-Condensed-bold uppercase w-full md:text-[14vw] md:leading-[0.75];
+}
+
+.sub-headline {
+  @apply font-playfair-regular text-2xl md:text-[1.3vw];
+}
