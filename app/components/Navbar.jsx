@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`fixed top-0 left-0 w-dvw text-white ${
+        className={`fixed inset-0 top-0 left-0 h-20 text-white ${
           !toggle ? "mix-blend-difference" : "text-black"
         } z-12`}
       >
@@ -50,7 +50,7 @@ const Navbar = () => {
               <div className="nav_btn">get in touch</div>
             </a>
             <div
-              className={`menu_btn cursor-pointer transition-all duration-700 ${
+              className={`menu_btn cursor-pointer transition-all duration-700 rounded-sm ${
                 toggle && "bg-white text-black"
               }`}
               onClick={() => setToggle(!toggle)}

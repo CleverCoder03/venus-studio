@@ -38,9 +38,83 @@
     font-family: "roc-Grotesk-Condensed-thin";
     src: url("/fonts/Roc_Grotesk_Condensed_Thin.otf") format("opentype");
   }
+
+  /* Playfair-Display */
+  @font-face {
+    font-family: "playfair-black";
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-Black.ttf")
+      format("truetype");
+  }
+  @font-face {
+    font-family: "playfair-black-italic";
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-BlackItalic.ttf")
+      format("truetype");
+  }
+  @font-face {
+    font-family: "playfair-bold";
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-Bold.ttf")
+      format("truetype");
+  }
+  @font-face {
+    font-family: "playfair-bold-italic";
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-BoldItalic.ttf")
+      format("truetype");
+  }
+  @font-face {
+    font-family: "playfair-extrabold";
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-ExtraBold.ttf")
+      format("truetype");
+  }
+  @font-face {
+    font-family: "playfair-extrabold-italic";
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-ExtraBoldItalic.ttf")
+      format("truetype");
+  }
+  @font-face {
+    font-family: "playfair-italic";
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-Italic.ttf")
+      format("truetype");
+  }
+  @font-face {
+    font-family: "playfair-medium";
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-Medium.ttf")
+      format("truetype");
+  }
+  @font-face {
+    font-family: "playfair-medium-italic";
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-MediumItalic.ttf")
+      format("truetype");
+  }
+  @font-face {
+    font-family: "playfair-regular";
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf")
+      format("truetype");
+  }
+  @font-face {
+    font-family: "playfair-semibold";
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-SemiBold.ttf")
+      format("truetype");
+  }
+  @font-face {
+    font-family: "playfair-semibold-italic";
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-SemiBoldItalic.ttf")
+      format("truetype");
+  }
 }
 
 @theme {
+  --font-playfair-black: "playfair-black", "sans-serif";
+  --font-playfair-black-italic: "playfair-black-italic", "sans-serif";
+  --font-playfair-bold: "playfair-bold", "sans-serif";
+  --font-playfair-bold-italic: "playfair-bold-italic", "sans-serif";
+  --font-playfair-extrabold: "playfair-extrabold", "sans-serif";
+  --font-playfair-extrabold-italic: "playfair-extrabold-italic", "sans-serif";
+  --font-playfair-italic: "playfair-italic", "sans-serif";
+  --font-playfair-medium: "playfair-medium", "sans-serif";
+  --font-playfair-regular: "playfair-regular", "sans-serif";
+  --font-playfair-semibold: "playfair-semibold", "sans-serif";
+  --font-playfair-semibold-italic: "playfair-semibold-italic", "sans-serif";
+
   --font-roc-Grotesk-Condensed-black: "roc-Grotesk-Condensed-black", "sans-serif";
   --font-roc-Grotesk-Condensed-bold: "roc-Grotesk-Condensed-bold", "sans-serif";
   --font-roc-Grotesk-Condensed-extra-bold: "roc-Grotesk-Condensed-extra-bold", "sans-serif";
@@ -53,6 +127,11 @@
 
 body{
   background: #ffffff;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .nav_btn {
@@ -60,5 +139,31 @@ body{
 }
 
 .menu_btn {
-  @apply uppercase font-roc-Grotesk-Condensed-bold border text-3xl px-2 py-1 align-middle lg:hidden;
+  @apply uppercase font-roc-Grotesk-Condensed-bold border text-3xl px-2.5 py-0.5 align-middle lg:hidden;
+}
+
+#hero_img_wrapper_1 {
+  position: relative;
+  padding: 1px; /* Border width */
+  background: #222; /* Border color */
+  clip-path: polygon(0 0, 100% 15%, 96% 100%, 0 86%);
+}
+
+.hero_img_1 {
+  clip-path: polygon(0 0, 100% 0%, 96% 100%, 0 86%);
+  position: relative;
+  background: white; /* Background color of your container */
+}
+
+#hero_img_wrapper_2 {
+  position: relative;
+  padding: 1px; /* Border width */
+  background: #222; /* Border color */
+  clip-path: polygon(4% 5%, 100% 0%, 100% 90%, 0 100%);
+}
+
+.hero_img_2 {
+  clip-path: polygon(4% 5%, 100% 0%, 100% 90%, 0 100%);
+  position: relative;
+  background: white; /* Background color of your container */
 }
