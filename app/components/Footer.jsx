@@ -13,7 +13,7 @@ const Footer = () => {
 
       <div className="py-6">
         <div>
-          <div className="relative z-10 mt-[10vh] [&_div]:bg-white [&_div]:font-roc-Grotesk-Condensed-bold [&_div]:uppercase [&_div]:mx-auto [&_div]:w-80 [&_div]:text-center [&_div]:pt-3 [&_div]:py-1 [&_div]:border [&_div]:text-2xl flex flex-col gap-10">
+          <div className="relative z-5 mt-[10vh] [&_div]:bg-white [&_div]:font-roc-Grotesk-Condensed-bold [&_div]:uppercase [&_div]:mx-auto [&_div]:w-80 [&_div]:text-center [&_div]:pt-3 [&_div]:py-1 [&_div]:border [&_div]:text-2xl flex flex-col gap-10">
             <a
               href="mailto:clevercoder0307@gmail.com"
               target="_blank"
@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <div className="relative z-10 flex w-full justify-between px-5 mt-40 [&_div_div]:bg-white [&_div_div]:border [&_div_div]:text-center [&_div_div]:uppercase [&_div_div]:font-roc-Grotesk-Condensed-bold [&_div_div]:px-4 [&_div]:flex [&_div]:flex-col [&_div]:gap-4 md:[&_div]:w-full md:[&_div]:flex-row md:[&_div]:justify-between md:[&_div_div]:w-fit md:gap-[20vw]">
+          <div className="relative z-5 flex w-full justify-between px-5 mt-40 [&_div_div]:bg-white [&_div_div]:border [&_div_div]:text-center [&_div_div]:uppercase [&_div_div]:font-roc-Grotesk-Condensed-bold [&_div_div]:px-4 [&_div]:flex [&_div]:flex-col [&_div]:gap-4 md:[&_div]:w-full md:[&_div]:flex-row md:[&_div]:justify-between md:[&_div_div]:w-fit md:gap-[20vw]">
             <div>
               <a
                 href="https://www.linkedin.com/in/clever-coder/"
