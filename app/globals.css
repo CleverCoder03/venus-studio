@@ -181,6 +181,32 @@ body{
   background: white; /* Background color of your container */
 }
 
+#bal_img_wrapper_3 {
+  position: relative;
+  padding: 1px; /* Border width */
+  background: #222; /* Border color */
+  clip-path: polygon(0 0, 98% 17%, 100% 85%, 0 100%);
+}
+
+.bal_img_3 {
+  clip-path: polygon(0 0, 98% 17%, 100% 85%, 0 100%);
+  position: relative;
+  background: white; /* Background color of your container */
+}
+
+#bal_img_wrapper_4 {
+  position: relative;
+  padding: 1px; /* Border width */
+  background: #222; /* Border color */
+  clip-path: polygon(0 15%, 100% 0%, 100% 90%, 0 100%);
+}
+
+.bal_img_4 {
+  clip-path: polygon(0 15%, 100% 0%, 100% 90%, 0 100%);
+  position: relative;
+  background: white; 
+}
+
 .headline {
   @apply text-[19.5vw] leading-[0.8] tracking-tight font-roc-Grotesk-Condensed-bold uppercase w-full md:text-[14vw] md:leading-[0.75];
 }

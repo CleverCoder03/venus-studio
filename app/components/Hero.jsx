@@ -33,7 +33,7 @@ const Hero = () => {
         y: isMobile ? 80 : 120,
       },
       {
-        y: -20,
+        y: 40,
         ease: "none",
       }
     ).fromTo(
@@ -42,7 +42,7 @@ const Hero = () => {
         y: isMobile ? 20 : 60,
       },
       {
-        y: -60,
+        y: -20,
         ease: "none",
       },
       "<"

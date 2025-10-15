@@ -28,7 +28,7 @@ const HomeMade = () => {
     tl.fromTo(
       heroImgRef3.current,
       {
-        y: isMobile ? 40 : 120,
+        y: isMobile ? 40 : 160,
       },
       {
         y: isMobile ? -20 : -40,
