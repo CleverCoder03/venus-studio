@@ -214,3 +214,7 @@ body{
 .sub-headline {
   @apply font-playfair-regular text-2xl md:text-[1.3vw];
 }
+
+.service-headline {
+  @apply font-playfair-regular text-3xl md:text-[1.5vw];
+}

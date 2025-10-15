@@ -82,8 +82,10 @@ const Balance = () => {
       <div className="relative -mt-5 z-[-1] md:z-0 md:mt-4">
         <div className="headline">
           <h1>Creativity &</h1>
-          <h1 className="text-center">Common <span className="hidden md:block">Sense.</span></h1>
-          <h1 className="md:hidden">Sense.</h1>
+          <div className="md:flex md:justify-center md:gap-4 lg:gap-6 xl:gap-8">
+            <h1 className="text-center">Common</h1>
+          <h1 className="">Sense.</h1>
+          </div>
         </div>
 
         <div className="flex justify-center md:justify-start md:absolute md:top-0 md:right-0">
