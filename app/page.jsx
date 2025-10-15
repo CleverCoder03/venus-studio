@@ -1,4 +1,5 @@
 import Balance from "./components/Balance";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import HomeMade from "./components/HomeMade";
 import Navbar from "./components/Navbar";
@@ -12,7 +13,8 @@ export default function Home() {
       <HomeMade />
       <Balance />
       <Services />
-      <div className="h-dvh"></div>
+      <Footer />
+      {/* <div className="h-dvh"></div> */}
     </main>
   );
 }
