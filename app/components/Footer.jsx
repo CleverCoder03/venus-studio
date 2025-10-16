@@ -25,7 +25,7 @@ const Footer = () => {
                 transition={{ duration: 0.8, ease: [0.83, 0, 0.17, 1] }}
                 className="-rotate-2"
               >
-                clevercoder0307@gmail.com
+                Developed By - Vishal Mishra
               </motion.div>
             </a>
           </div>
